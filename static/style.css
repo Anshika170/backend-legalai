@@ -1,0 +1,86 @@
+.jumbotron{
+    background-color: orange;
+}
+
+.Original_title{
+    background-color: orangered;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+
+}
+.summary_title{
+    background-color: greenyellow;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.srt{
+    display: flex;
+    flex-direction: row;
+}
+
+.originaltxt{
+    background-color: orangered;
+    padding: 20px;
+
+
+}
+
+.summarytxt{
+  background-color: greenyellow;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.heading{
+    font-weight: bold;
+    display: flex;
+    justify-content:center
+}
+.lead{
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 300px;
+
+}
+
+.button-container form {
+    display: inline-block;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    border: 5;
+    background-color:rgb(4, 255, 0);
+    color: #fff; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    border-radius: 10%;
+
+}
+
+.button-container button:hover {
+    background-color:rgb(255, 157, 0); 
+}
+.butPage{
+    background-color:black ;
+}

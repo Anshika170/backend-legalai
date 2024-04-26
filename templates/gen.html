@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Your Question</title>
+</head>
+<body>
+    <h1>Assistent</h1>
+    <form action="/gen_c" method="post">
+        <textarea name="prompt" rows="5" cols="50" placeholder="Enter your prompt here...">{{ prompt }}</textarea><br>
+        <button type="submit">Answer to Your Query</button><br>
+    </form>
+    {% if generated_contract %}
+    <h2>Answer to Query:</h2>
+    <p>{{ generated_contract }}</p>
+    {% endif %}
+</body>
+</html>

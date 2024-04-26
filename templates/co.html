@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Generator</title>
+</head>
+<body>
+    <h1>Contract Generator</h1>
+    <form action="/contract" method="POST">
+        <label for="partyA">Party A Name:</label>
+        <input type="text" id="partyA" name="partyA"><br>
+
+        <label for="partyB">Party B Name:</label>
+        <input type="text" id="partyB" name="partyB"><br>
+
+        <label for="contractType">Contract Type:</label>
+        <input type="text" id="contractType" name="contractType"><br>
+
+        <label for="contractDetails">Contract Details:</label><br>
+        <textarea id="contractDetails" name="contractDetails" rows="4" cols="50"></textarea><br>
+
+        <button type="submit">Generate Contract</button>
+    </form>
+
+    {% if contract %}
+    <h2>Generated Contract:</h2>
+    <p>{{ contract }}</p>
+    {% endif %}
